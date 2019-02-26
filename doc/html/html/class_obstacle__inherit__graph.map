@@ -1,0 +1,6 @@
+<map id="Obstacle" name="Obstacle">
+<area shape="rect" id="node2" href="$class_polygon.html" title="Polygon" alt="" coords="38,155,107,181"/>
+<area shape="rect" id="node3" href="$class_filled_convex_shape.html" title="FilledConvexShape" alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node4" href="$class_shape.html" title="Shape" alt="" coords="43,5,102,32"/>
+<area shape="rect" id="node5" href="$class_bounded_shape.html" title="BoundedShape" alt="" coords="132,155,243,181"/>
+</map>

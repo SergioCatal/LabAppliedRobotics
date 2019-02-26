@@ -1,0 +1,9 @@
+{
+  "PointsPerCell": 7,
+  "ClippingQuantity": 80,
+  "VictimBonus": 7,
+  "RobotCurvature": 0.01,
+  "RobotVelocity": 100,
+  "MissionType": 1,
+  "NumberTrials": 7
+}

@@ -1,0 +1,8 @@
+<map id="FilledConvexShape" name="FilledConvexShape">
+<area shape="rect" id="node3" href="$class_bounding_box.html" title="BoundingBox" alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node4" href="$class_circle.html" title="Circle" alt="" coords="128,155,184,181"/>
+<area shape="rect" id="node6" href="$class_polygon.html" title="Polygon" alt="" coords="209,155,279,181"/>
+<area shape="rect" id="node2" href="$class_shape.html" title="Shape" alt="" coords="127,5,185,32"/>
+<area shape="rect" id="node5" href="$class_victim.html" title="Victim" alt="" coords="125,229,184,256"/>
+<area shape="rect" id="node7" href="$class_obstacle.html" title="Obstacle" alt="" coords="208,229,283,256"/>
+</map>

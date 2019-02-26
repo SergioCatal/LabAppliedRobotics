@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:java="http://www.yworks.com/xml/yfiles-common/1.0/java" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns:yed="http://www.yworks.com/xml/yed/3" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd">
+  <!--Created by yEd 3.18.2-->
+  <key for="port" id="d0" yfiles.type="portgraphics"/>
+  <key for="port" id="d1" yfiles.type="portgeometry"/>
+  <key for="port" id="d2" yfiles.type="portuserdata"/>
+  <key attr.name="url" attr.type="string" for="node" id="d3"/>
+  <key attr.name="description" attr.type="string" for="node" id="d4"/>
+  <key for="node" id="d5" yfiles.type="nodegraphics"/>
+  <key for="graphml" id="d6" yfiles.type="resources"/>
+  <key attr.name="url" attr.type="string" for="edge" id="d7"/>
+  <key attr.name="description" attr.type="string" for="edge" id="d8"/>
+  <key for="edge" id="d9" yfiles.type="edgegraphics"/>
+  <graph edgedefault="directed" id="G">
+    <node id="n0">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="279.62733340377144" width="322.2087439278282" x="1306.776598312631" y="-2373.8386814266696"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="69.3173828125" x="126.4456805576641" xml:space="preserve" y="3.0">Segment</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-p1: Point2f
+-p2: Point2f</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+getLenght() : float
++getMLine() : float
++getQLine() : float
++isSegmentTouching(Segment) : bool
++isArcTouching(Point2f,float,Point2f,Point2f) : bool
++getMaxX : float
++getMaxY : float
++getMinY : float
++getMinX : float
++getP1() : Point2f
++getP2() : Point2f
++setP1(Point2f) : void
++setP2(Point2f) : void
++print override : void
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n1">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="259.2401276891044" width="377.6683181070547" x="985.0130398940046" y="-2013.4942429890566"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="45.38671875" x="166.14079967852734" xml:space="preserve" y="3.0">Circle</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-radius : float</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+resize(float) override: void
++isPointInside(Point2f) override : bool
++isSegmentColliding(Segment) override : bool
++isArcColliding(Point2f, float, Point2f, Point2f) override : bool
++isDubinsArcColliding(DubinsArc) override : bool
++isDubinsCurceColliding(DubinsCurve) override : bool
++getRadius : float
++setRadius(float) : void
++print() override: void
++getArea() override : float</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n2">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="275.6826903696942" width="363.04916318506895" x="87.47107022020631" y="-2016.9278821499877"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="100.89697265625" x="131.07609526440947" xml:space="preserve" y="3.0">BoundingBox</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-min_x : float
+-min_y : float
+-max_x : float
+-max_y : float</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+print() override: void
++getArea() override : float
++isSegmentColliding(Segment) override : bool
++isArcColliding(Point2f,float,Point2f,Point2f) override : bool
++isPointInside(Point2f) override : bool
++isDubinsArcColliding(DubinsArc) override : bool
++isDubinsCurveColliding(DubinsCurve) override : bool
++resize(float) override : void
++getMinx() : float
++getMinY() : float
++getMaxX() : float
++getMaxY() : float</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n3">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="257.1791132718902" width="425.3637751561416" x="480.52023340527523" y="-2037.6956764380502"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="62.880859375" x="181.2414578905708" xml:space="preserve" y="3.0">Polygon</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-vertices : vector&lt;Point2f&gt;
+-segments : vector&lt;Segment&gt;
+</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+isPointInside(Point2f) override : bool
++isDubinsCurveColliding(DubinsCurve) override : bool
++isDubinsArcColliding(DubiinsArc) override : bool
++isArcColliding(Point2f,float,Point2f,Point2f) override : bool
++isSegmentColliding(Segment) override : bool
++resize(float) override : void
++clipperEdges(float) : void
++calculateSegments() : void
++getSegments() : vector&lt;Segment&gt;
++getNVertices() : int
++getVertices() : vector&lt;Point2f&gt;
++print() override : void
++getArea() override : float</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n4">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="297.12112805413585" width="228.26909425443523" x="1785.5150286863309" y="-2355.919968310778"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="78.978515625" x="74.64528931471762" xml:space="preserve" y="3.0">DubinsArc</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-x0 : float
+-y0 : float
+-th0 : float
+-k : float
+-l : float
+-xf : float
+-yf : float
+-thf : float</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+getX0() : float
++getY0() : float
++getTh0() : float
++getK() : float
++getL() : float
++getXf() : float
++getYf() : float
++getThf : float
++print() override : void</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n5">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="271.8055683553091" width="258.0" x="2151.4837315992227" y="-2355.919968310778"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="97.2978515625" x="80.35107421875" xml:space="preserve" y="3.0">DubinsCurve</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-arc1 : DubinsArc
+-arc2 : DubinsArc
+-arc3 : DubinsArc</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+getArc(int) : DubinsArc
++getTotalLenght() : float
++getX1() : float
++getY1() : float
++getTh1() : float
++getX2() : float
++getY2() : float
++getTh2() : float
++getXf() : float
++getYf() : float
++getThf() : float
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n6">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="215.03082859125584" width="473.8657182512144" x="1982.8966388310205" y="-1890.5098042437646"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="101.25244140625" x="186.3066384224822" xml:space="preserve" y="3.0">DubinsSolver</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">+DubinsProblemParameters
++DubinsProblemScaledParameters</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">-LRL(DubinsProblemScaledParameters,double,double,double) static : bool
+-RLR(DubinsProblemScaledParameters,double,double,double) static : bool
+-RSL(DubinsProblemScaledParameters,double,double,double) static : bool
+-LSR(DubinsProblemScaledParameters,double,double,double) static : bool
+-RSR(DubinsProblemScaledParameters,double,double,double) static : bool
+-LSL(DubinsProblemScaledParameters,double,double,double) static : bool
+-scaleFromStandard(double,double,double,double) : void
++shortestPath(float,float,float,float,float,float,float,DubinsCurve*) : int
++freeCurves(DubinsCurve*) : void
+
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n7">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="271.8055683553091" width="258.0" x="970.3238420104117" y="-1356.9851322405489"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="35.0146484375" x="111.49267578125" xml:space="preserve" y="3.0">Map</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-obstacles : vector&lt;Obstacle&gt;
+-goal : Polygon
+-victims : vector&lt;Victim&gt;
+-width : int
+-height : int</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+readFile(String) : void
++printOnFileSystem(String) : void
++print() : void
++getVictims() : vector&lt;Victim&gt;
++getObstacles() : vector&lt;Obstacle&gt;
++getWidth() : int
++getHeight() : int
++getGoal() : Polygon
++resize(float) : void</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n8">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="245.70054268085528" width="385.99644691186677" x="195.8887492532989" y="-2659.304292494806"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="54.57177734375" x="165.71233478405838" xml:space="preserve" y="3.0">Plotter</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-img : Mat</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+drawObstacle(Obstacle) : void
++drawObstacle(Obstacle,Scalar) : void
++drawObstacles(vector&lt;Obstacle&gt;) : void
++drawVictim(Victim) : void
++drawPolygon(Polygon) : void
++drawBoundingBox(BoundingBox) : void
++drawCircle(Circle) : void
++drawSegment(Segment) : void
++drawDubinsArc(DubinsArc) : void
++drawDubinsCurve(DubinsCurve) : void
++drawMap(Map) : void
++show() : void
++getImg() : Mat</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n9">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="138.0023819541641" width="430.72595419511754" x="195.8887492532989" y="-2328.111560962686"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="48.8271484375" x="190.94940287880877" xml:space="preserve" y="3.0">Utility</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve"/>
+            <y:MethodLabel xml:space="preserve">+sinc(double) static : double
++mod2pi(double) static : double
++fromFloatPointToIntPoint(Point2f) : Point
++fromFloatPointsToIntPoints(vector&lt;Point2f&gt; : vector&lt;Point&gt;
++invertYPoint(Point) : Point</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n10">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="128.71743511450381" width="460.94173490631516" x="-532.4467391237497" y="-2158.3379058389655"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="130.12158203125" x="165.41007643753258" xml:space="preserve" y="3.0">CollisionDetector</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-obstacles : vector&lt;Obstacle&gt;
+-map_limits : BoundingBox</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+collisionWithDubinsArc(DubinsArc) : bool
++collisionWIthDubinsCurve(DubinsCurve) : bool
++pathWIthoutCollisions(float,float,float,float,float,float,float,DubinsCurve) : bool
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n11">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="128.71743511450381" width="258.0" x="1046.1112118924375" y="-1701.5526714494317"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="50.439453125" x="103.7802734375" xml:space="preserve" y="3.0">Victim</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-victim_number : int</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+getNumber : int
++setNumber(int): void
++print override: void</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n12">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="128.71743511450381" width="258.0" x="1073.7293243143656" y="-2624.868570773778"/>
+          <y:Fill color="#FF5722" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="49.5126953125" x="104.24365234375" xml:space="preserve" y="3.0">Shape</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-center: Point2f</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+getCenter : Point2f
++setCenter : void
++print: void
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n13">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="148.45372935461478" width="347.47120055516984" x="740.1659112897302" y="-2351.137237576149"/>
+          <y:Fill color="#FF5722" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="143.28662109375" x="102.09228973070992" xml:space="preserve" y="3.0">FilledConvexShape</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve"/>
+            <y:MethodLabel xml:space="preserve">+isPointInside(Point2f) : bool
++isSegmentColliding(Segment) : bool
++isArcColliding(Point2f, float, Point2f, Point2f) : bool
++isDubinsArcColliding(DubinsArc) : bool
++isDubinsCurveColliding(DubinsCurve) : bool
++getArea() : float
++resize(float) : void</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n14">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="194.3998223455933" width="416.6271755725189" x="484.8885331970866" y="-1610.3190042148617"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="68.060546875" x="174.28331434875946" xml:space="preserve" y="3.0">Obstacle</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-boundingbox : Rectangle</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+isDubinsCurveCollidingWithBoundingBox(DubinsCurve) : bool
++isDubinsArcCollidingWithBoundingBox(DubinsArc) : bool
++isArcCollidingWithBoundingBox(Point2f,float,Point2f,Point2f) : bool
++isSegmentCollidingWithBoundingBox(Segment) : bool
++calculateBoundingBox() : void
++clipperEdges(float) override : void
++resize(float) override : void
++print() override : void
++getBoundingBox() : BoundingBox</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n15">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="179.85920918576994" width="258.0" x="-830.701475402198" y="-1509.0613302253234"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="94.53662109375" x="81.731689453125" xml:space="preserve" y="3.0">PointsGraph</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-nodes : vector&lt;PointNode&gt;
+-map : unordered_map&lt;cv::Point2f, int, point_hash&gt;</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+shortestPath(Point2f,Point2f, vector&lt;Point2f&gt;) : void
++shortestPath(int,int, vector&lt;Point2f&gt;) : void
++addEdge(Point2f,Point2f) : void
++addEdge(int,int) : void
++addPoint(Point2f) : int
+-distancePP(int,int) : float 
+-insertNode(Point2f) : int</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n16">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="156.76292412132716" width="258.0" x="-1118.701475402198" y="-1509.0613302253234"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="80.31787109375" x="88.841064453125" xml:space="preserve" y="3.0">PointNode</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-point : Point2f
+-neighbors : vector&lt;int&gt;</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+addNeighbor(int) : void
++getNeighbors() : vector&lt;int&gt;
++getX() : float
++getY() : float
++getPoint : Point2f
+</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n17">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="221.1025753722747" width="258.0" x="-724.6972123030699" y="-1811.7876380342695"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="31.26953125" x="113.365234375" xml:space="preserve" y="3.0">Cell</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-ray1 : Segment
+-ray2 : Segment
+-seg1 : Segment
+-seg2 : Segment
+-open_case : int
+-close_case : int
+-last_points : vector&lt;Point2f&gt;</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+calculatePointsOfInterest(Segment,int,PointsGraph) : void
++containsSegment(Segment) : bool 
++getLastPoints() : vector&lt;Point2f&gt;
++addRay2(Segment, int, PointsGraph) : void</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n18">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="156.76292412132716" width="258.0" x="-1057.8138681660334" y="-1833.217429214862"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="94.99365234375" x="81.503173828125" xml:space="preserve" y="3.0">Decomposer</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve"/>
+            <y:MethodLabel xml:space="preserve">+decompose(PointsGraph,Map) : void
++prepareMap(float,Map): Map
+-reshapeExitingPolygons(&amp;Map) : void
+-eliminateVerticaLines(&amp;Map) : void
+-getUpCollision(map&lt;float,Segment&gt;, float,&amp;Map) : Segment
+-getDownCollision(map&lt;float,Segment&gt;, float,&amp;Map) : Segment</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n19">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="156.7629241213274" width="484.98403040363905" x="-1035.4436051089822" y="-2274.943342499776"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="94.263671875" x="195.36017926431953" xml:space="preserve" y="3.0">PathPlanner</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">-m : Map
+-cd : CollisionDetector
+-pg : PointsGraph</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">+saveVictimsPath(Point2f, float, float) : bool
++recursive(int, float, int, float, vector&lt;Point2f&gt;, vector&lt;DubinsCurve&gt;) : bool
++getPath(Point2f, float, Point2f, float, float, *vector&lt;DubinsCurve&gt;) : bool
+-calculateGoalArrivalAngle() : float</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <node id="n20">
+      <data key="d5">
+        <y:UMLClassNode>
+          <y:Geometry height="128.71743511450381" width="258.0" x="-203.66218911055586" y="-2434.5289489777138"/>
+          <y:Fill color="#607D8B" transparent="false"/>
+          <y:BorderStyle color="#FFFFFF" type="line" width="1.0"/>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="13" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="19.1328125" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#FFFFFF" verticalTextPosition="bottom" visible="true" width="14.06103515625" x="121.969482421875" xml:space="preserve" y="3.0">A</y:NodeLabel>
+          <y:UML clipContent="true" constraint="" detailsColor="#FFFFFF" omitDetails="false" stereotype="" use3DEffect="false">
+            <y:AttributeLabel xml:space="preserve">a</y:AttributeLabel>
+            <y:MethodLabel xml:space="preserve">a</y:MethodLabel>
+          </y:UML>
+        </y:UMLClassNode>
+      </data>
+    </node>
+    <edge id="e0" source="n1" target="n13">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="8.607668739490906" sy="-125.29216979431976" tx="0.0" ty="0.0">
+            <y:Point x="1182.454867687023" y="-2057.69567643805"/>
+            <y:Point x="913.9015115673151" y="-2057.69567643805"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e1" source="n2" target="n13">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="268.5903236204043" y="-2057.69567643805"/>
+            <y:Point x="913.9015115673151" y="-2057.69567643805"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e2" source="n11" target="n1">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n3" target="n13">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="693.202120983346" y="-2057.69567643805"/>
+            <y:Point x="913.9015115673151" y="-2057.69567643805"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e4" source="n7" target="n11">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1175.1112118924375" y="-1406.9324521572732"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:EdgeLabel alignment="center" configuration="AutoFlippingLabel" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" hasText="false" height="4.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" verticalTextPosition="bottom" visible="true" width="4.0" x="37.555620158022066" y="-13.398745587476014">
+            <y:LabelModel>
+              <y:SmartEdgeLabelModel autoRotationEnabled="false" defaultAngle="0.0" defaultDistance="10.0"/>
+            </y:LabelModel>
+            <y:ModelParameter>
+              <y:SmartEdgeLabelModelParameter angle="0.0" distance="29.715958599699672" distanceToCenter="false" position="right" ratio="0.14279445365133123" segment="0"/>
+            </y:ModelParameter>
+            <y:PreferredPlacementDescriptor angle="0.0" angleOffsetOnRightSide="0" angleReference="absolute" angleRotationOnRightSide="co" distance="-1.0" frozen="true" placement="anywhere" side="anywhere" sideReference="relative_to_edge_flow"/>
+          </y:EdgeLabel>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e5" source="n3" target="n0">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e6" source="n5" target="n4">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e7" source="n13" target="n12">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="913.9015115673151" y="-2420.4483820957716"/>
+            <y:Point x="1202.7293243143656" y="-2420.4483820957716"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e8" source="n0" target="n12">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1467.8809702765452" y="-2416.237972657881"/>
+            <y:Point x="1202.7293243143656" y="-2416.237972657881"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e9" source="n4" target="n12">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="1914.5150286863307" y="-2414.132767938936"/>
+            <y:Point x="1202.7293243143656" y="-2414.132767938936"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e10" source="n14" target="n3">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e11" source="n14" target="n2">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e12" source="n7" target="n14">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="diamond" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e13" source="n5" target="n12">
+      <data key="d7" xml:space="preserve"/>
+      <data key="d9">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0">
+            <y:Point x="2280.4837315992227" y="-2396.7306387263234"/>
+            <y:Point x="1202.7293243143656" y="-2396.7306387263234"/>
+          </y:Path>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="none" target="white_delta"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+  </graph>
+  <data key="d6">
+    <y:Resources/>
+  </data>
+</graphml>

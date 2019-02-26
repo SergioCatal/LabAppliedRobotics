@@ -1,0 +1,5 @@
+<map id="BoundingBox" name="BoundingBox">
+<area shape="rect" id="node2" href="$class_filled_convex_shape.html" title="FilledConvexShape" alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$class_shape.html" title="Shape" alt="" coords="43,5,102,32"/>
+<area shape="rect" id="node4" href="$class_bounded_shape.html" title="BoundedShape" alt="" coords="164,80,275,107"/>
+</map>

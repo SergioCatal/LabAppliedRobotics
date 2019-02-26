@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_bounded_shape.html" title="BoundedShape" alt="" coords="124,5,235,32"/>
+<area shape="rect" id="node2" href="$class_bounding_box.html" title="BoundingBox" alt="" coords="295,56,393,83"/>
+<area shape="rect" id="node3" href="$class_obstacle.html" title="Obstacle" alt="" coords="441,56,516,83"/>
+<area shape="rect" id="node4" href="$class_shape.html" title="Shape" alt="" coords="5,132,64,159"/>
+<area shape="rect" id="node5" href="$class_dubins_arc.html" title="DubinsArc" alt="" coords="138,56,221,83"/>
+<area shape="rect" id="node6" href="$class_dubins_curve.html" title="DubinsCurve" alt="" coords="130,107,229,133"/>
+<area shape="rect" id="node7" href="$class_filled_convex_shape.html" title="FilledConvexShape" alt="" coords="112,157,247,184"/>
+<area shape="rect" id="node11" href="$class_segment.html" title="Segment" alt="" coords="142,208,217,235"/>
+<area shape="rect" id="node8" href="$class_circle.html" title="Circle" alt="" coords="316,157,372,184"/>
+<area shape="rect" id="node10" href="$class_polygon.html" title="Polygon" alt="" coords="309,107,379,133"/>
+<area shape="rect" id="node9" href="$class_victim.html" title="Victim" alt="" coords="449,157,508,184"/>
+</map>

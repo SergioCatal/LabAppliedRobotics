@@ -1,0 +1,5 @@
+<map id="Polygon" name="Polygon">
+<area shape="rect" id="node4" href="$class_obstacle.html" title="Obstacle" alt="" coords="35,229,110,256"/>
+<area shape="rect" id="node2" href="$class_filled_convex_shape.html" title="FilledConvexShape" alt="" coords="5,80,140,107"/>
+<area shape="rect" id="node3" href="$class_shape.html" title="Shape" alt="" coords="43,5,102,32"/>
+</map>

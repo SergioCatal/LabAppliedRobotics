@@ -1,0 +1,12 @@
+<map id="ImageOperation" name="ImageOperation">
+<area shape="rect" id="node3" href="$class_filter.html" title="Filter" alt="" coords="157,155,207,181"/>
+<area shape="rect" id="node6" href="$class_morphological_operation.html" title="MorphologicalOperation" alt="" coords="267,155,425,181"/>
+<area shape="rect" id="node10" href="$class_multi_morphology.html" title="MultiMorphology" alt="" coords="450,155,567,181"/>
+<area shape="rect" id="node11" href="$class_two_ranges_filter.html" title="TwoRangesFilter" alt="" coords="592,155,713,181"/>
+<area shape="rect" id="node2" href="$class_j_s_o_n_compatible.html" title="JSONCompatible" alt="" coords="365,5,489,32"/>
+<area shape="rect" id="node4" href="$class_adaptive_filter.html" title="AdaptiveFilter" alt="" coords="5,229,108,256"/>
+<area shape="rect" id="node5" href="$class_in_range_filter.html" title="InRangeFilter" alt="" coords="132,229,232,256"/>
+<area shape="rect" id="node7" href="$class_dilation.html" title="Dilation" alt="" coords="257,229,323,256"/>
+<area shape="rect" id="node8" href="$class_erosion.html" title="Erosion" alt="" coords="347,229,414,256"/>
+<area shape="rect" id="node9" href="$class_gaussian.html" title="Gaussian" alt="" coords="438,229,515,256"/>
+</map>

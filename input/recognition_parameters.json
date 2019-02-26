@@ -1,0 +1,18 @@
+{
+  "RedFilter":{
+    "Range1":[0,10,10,15,255,255],
+    "Range2":[160,10,10,180,255,255]
+  },
+  "RedProcessing":[],
+  "ObstaclesContourApproximation":[10],
+  "BlueFilter":[110,50,50,145,255,255],
+  "BlueProcessing":["dilation", ["rectangle", 3, 3], "dilation", ["rectangle", 3, 3], "dilation", ["rectangle", 3, 3], "dilation", ["rectangle", 3, 3], "erosion", ["rectangle", 3, 3], "gaussian", [2, 5, 5]],
+  "GateContourApproximation":[30],
+  "BlackGreenFilter":[50,10,10,90,255,255],
+  "BlackGreenProcessing":["erosion", ["ellipse", 11, 11], "dilation", ["ellipse", 11, 11], "dilation", ["ellipse", 31, 31], "erosion", ["ellipse", 31, 31]],
+  "VictimsContourApproximation": [10, 10000],
+  "GreenFilter":[35,76,76,75,255,255],
+  "GreenProcessing":["dilation", ["rectangle", 13, 13], "erosion", ["rectangle", 13, 13]],
+  "MinimumDigitArea": 3000,
+  "DigitImageSize": 200
+}
