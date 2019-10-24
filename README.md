@@ -1,5 +1,6 @@
 # Laboratory of Applied Robotics Project
 ## A C++ Localization and Path Planning program for a small Lego Mindstorm differential drive
+## Implemented from scratch using only OpenCV
 Final Work of the Laboratory of Applied Robotics course held in the accademic year 2018/2019 by professor Luigi Palopoli and his teaching assistant Paolo Bevilacqua at the University of Trento.
 This project has been developed by Simone Zamboni and Sergio Catalano: it took a very long time and a lot of sleepless nights to complete it, but in the end the result is worth the effort, as we hope you will see.
 
